@@ -32,7 +32,7 @@ CI runs the same check on every push (`.github/workflows/conformance.yml`).
 - `ref/` is vendored from giskard09/argentum-core under Apache-2.0, pinned
   at `f5eee83` (the `agent_mixed` fix — a bug this implementation's author
   reported upstream via differential testing).
-- - `trail_verify.py`: check order, verdict/reason strings, and result
+- `trail_verify.py`: check order, verdict/reason strings, and result
   fields are spec-mandated. The input-validation strings and the aligned
   check semantics in `verify_trail` and `verify_checkpoint_cadence`, and
   the `entry_preimage`, `append_entry` and `make_checkpoint` helpers,
