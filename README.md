@@ -4,9 +4,12 @@ Independent second implementation of `trail-head-ref-v1`
 (giskard09/argentum-core), continuously verified byte-identical against the
 vendored upstream reference.
 
-`trail_verify.py` is written from the spec — own JCS (RFC 8785) canonicalizer,
-own Merkle inclusion proof handling, stdlib only. It is not vendored from, nor
-derived from, upstream code.
+`trail_verify.py` implements the spec with our own JCS (RFC 8785)
+canonicalizer, own Merkle inclusion-proof handling, stdlib only. It was
+developed against the spec and published vectors with `trail_head.py` as
+the reference at hand, then differential-tested against it; where the
+implementations disagreed we aligned to upstream. See Provenance below
+for exactly which parts derive from upstream.
 
 `differential_check.py` runs every pinned vector through BOTH implementations
 and requires identical output on every field the reference emits:
