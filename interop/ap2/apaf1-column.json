@@ -243,6 +243,280 @@
         ]
       }
     },
+    "sdk_v2": {
+      "sdk-budget": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "ok",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [],
+            "payment": 1,
+            "transaction_id": "-8EQAy-qKNewoKScv7C5-9Q4fntxkG4BEctXhU7NWls",
+            "verdict": "approved"
+          },
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "violated",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "constraint:budget_exceeded:19900+15000>30000",
+              "hard:constraint:budget_exceeded:19900+15000>30000"
+            ],
+            "payment": 2,
+            "transaction_id": "AB1uWD7_s1G3xLhDaN_WIiKF2W036i8uGOdLi2nvE0c",
+            "verdict": "declined"
+          }
+        ]
+      },
+      "sdk-declined": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "ok",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Error:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "no_execution:processor_error"
+            ],
+            "payment": 1,
+            "transaction_id": "sNfY7S5-BccGql9UnZX8lFRpn01TWUV3TB_sxLdGjJ4",
+            "verdict": "not_evaluated"
+          }
+        ]
+      },
+      "sdk-issuer-jwt-hash": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "issuer_jwt_hash",
+              "checkout_binding": "ok",
+              "constraints": "ok",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [],
+            "payment": 1,
+            "transaction_id": "WNsPHqWOsWynd9ml_fskIjWaS81AP2PMCrxix3vLfUo",
+            "verdict": "approved"
+          }
+        ]
+      },
+      "sdk-lost-receipt": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "ok",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "absent",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "escalate:receipt_absent"
+            ],
+            "payment": 1,
+            "transaction_id": "UfwsBVV6Aw17MQpITcjyzXT2OLVJGKRERHqXkIxIhiI",
+            "verdict": "escalated"
+          }
+        ]
+      },
+      "sdk-over-range": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "violated",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "constraint:amount_above_max:25000>20000",
+              "hard:constraint:amount_above_max:25000>20000"
+            ],
+            "payment": 1,
+            "transaction_id": "OI2IX3FtelCqIop28cnrIldbW70Ozl6W3S25plSJF0o",
+            "verdict": "declined"
+          }
+        ]
+      },
+      "sdk-redeemed-twice": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "ok",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "closed_mandate_replay",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "hard:closed_mandate_replay"
+            ],
+            "payment": 1,
+            "presentations": [
+              {
+                "chain": 1,
+                "checks": {
+                  "chain_binding": "sd_hash",
+                  "checkout_binding": "ok",
+                  "constraints": "ok",
+                  "delegate_signature": "ok",
+                  "issuer_signature": "ok",
+                  "receipt": "Success:bound",
+                  "replay": "ok",
+                  "spec_schema": "conformant"
+                },
+                "evidence": [],
+                "verdict": "approved"
+              },
+              {
+                "chain": 2,
+                "checks": {
+                  "chain_binding": "sd_hash",
+                  "checkout_binding": "ok",
+                  "constraints": "ok",
+                  "delegate_signature": "ok",
+                  "issuer_signature": "ok",
+                  "receipt": "Success:bound",
+                  "replay": "closed_mandate_replay",
+                  "spec_schema": "conformant"
+                },
+                "evidence": [
+                  "hard:closed_mandate_replay"
+                ],
+                "verdict": "declined"
+              }
+            ],
+            "transaction_id": "v-UNDa30lSLCHJDrCZRvIG2vBJ_jzp2d2lHR1j2OSH4",
+            "verdict": "declined"
+          }
+        ]
+      },
+      "sdk-ref-checkout-absent": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "absent",
+              "constraints": "unverifiable",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "constraint_unverifiable:payment_reference_context_absent",
+              "escalate:checkout_chain_absent"
+            ],
+            "payment": 1,
+            "transaction_id": "xmSntn789cszB_XGEQnUVTTuexW6ZPYVoYOy4XvSIkM",
+            "verdict": "escalated"
+          }
+        ]
+      },
+      "sdk-ref-other-checkout": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "reference_mismatch",
+              "constraints": "violated",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "constraint:payment_reference_mismatch",
+              "hard:constraint:payment_reference_mismatch",
+              "hard:checkout_reference_mismatch"
+            ],
+            "payment": 1,
+            "transaction_id": "AYsqNUCsyf9bax3fdMtCAECCGyVscAcnLafasLE2vAI",
+            "verdict": "declined"
+          }
+        ]
+      },
+      "sdk-within": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "ok",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [],
+            "payment": 1,
+            "transaction_id": "IEFD2AWz78SAp5E4ZMpoubz5hSVJLHuCrOCQwRsvOWE",
+            "verdict": "approved"
+          }
+        ]
+      },
+      "sdk-wrong-payee": {
+        "payments": [
+          {
+            "checks": {
+              "chain_binding": "sd_hash",
+              "checkout_binding": "ok",
+              "constraints": "violated",
+              "delegate_signature": "ok",
+              "issuer_signature": "ok",
+              "receipt": "Success:bound",
+              "replay": "ok",
+              "spec_schema": "conformant"
+            },
+            "evidence": [
+              "constraint:payee_not_allowed",
+              "hard:constraint:payee_not_allowed"
+            ],
+            "payment": 1,
+            "transaction_id": "BDezYPKq9t_bC8lM2s0f4Mutr2cm2HSborhBFYmPWNU",
+            "verdict": "declined"
+          }
+        ]
+      }
+    },
     "synthetic": {
       "s1-within": {
         "payments": [
@@ -601,6 +875,7 @@
   "format": "apaf1-ap2-interop-column-1",
   "inputs": {
     "sdk_fixture_sha256": "7e1dd6d97003d11f61ee2b60625bc1fff282d9a5f1eaa7426b276bbd3140b61f",
+    "sdk_v2_fixture_sha256": "70626262730fd4e057fb49aa5a404268f8e8192d6b1d3b0f460d3eb5c4a63a05",
     "synthetic_fixture_sha256": "bd530228cb9880d33f49016ab85f426a6c0e9668f3b6e47734b4aa779a71c4fc"
   },
   "judged_by": "APAF-1 decision layer (paymnts, nmatt1), for the AP2 issue #402 crosswalk with AMEP and AER-1",
