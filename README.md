@@ -1,6 +1,6 @@
 # paymnts trail-head conformance
 
-Independent second implementation of `trail-head-ref-v1`
+Second implementation of `trail-head-ref-v1`
 (giskard09/argentum-core), continuously verified byte-identical against the
 vendored upstream reference.
 
@@ -32,12 +32,13 @@ CI runs the same check on every push (`.github/workflows/conformance.yml`).
 - `ref/` is vendored from giskard09/argentum-core under Apache-2.0, pinned
   at `f5eee83` (the `agent_mixed` fix — a bug this implementation's author
   reported upstream via differential testing).
-- `trail_verify.py`: check order, verdict/reason strings, and result
+- - `trail_verify.py`: check order, verdict/reason strings, and result
   fields are spec-mandated. The input-validation strings and the aligned
-  check semantics in `verify_trail` and `verify_checkpoint_cadence`
+  check semantics in `verify_trail` and `verify_checkpoint_cadence`, and
+  the `entry_preimage`, `append_entry` and `make_checkpoint` helpers,
   derive from `trail_head.py@f5eee83` (adopted during differential
   alignment, 2026-10-26). The JCS canonicalizer, Merkle proof code, and
-  all surrounding pipeline code are original.
+  all remaining pipeline code are original.
 - `vectors/cadence-vectors.json` was authored by us and proposed upstream.
 - `pin.json` pins the upstream reference at `f5eee83` and records SHA-256
   of every file in this package. Upstream spec text has since moved to
