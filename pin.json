@@ -1,0 +1,27 @@
+{
+  "upstream": {
+    "repo": "giskard09/argentum-core",
+    "spec": "trail-head-ref-v1",
+    "pinned_through": "f5eee83",
+    "note": "code+vectors; spec doc moved to 217009a (docs-only)"
+  },
+  "implementation": {
+    "name": "paymnts trail_verify",
+    "license": "TBD \u2014 see README (user decision)",
+    "note": "independent implementation written from spec; not vendored from upstream"
+  },
+  "file_sha256": {
+    "__pycache__/trail_verify.cpython-310.pyc": "2a55e496b480df69394b1e87c7dd6d9c74b41cd5cac33beeac6140617ee758e5",
+    "differential_check.py": "5a40446054d8c7cd96db9522dbeaee494638f07eeadcaff34aa1130290d71fd8",
+    "ref/__pycache__/jcs.cpython-310.pyc": "59cf22d4aa116f954bf7db1e0fc2dd3f1e873f48a8a4672105710b0418e264f7",
+    "ref/jcs.py": "cf37512e2e44c873037bdbd26c671274c02513831f574ac98634969df4f621b8",
+    "ref/plugins/agt_evidence_anchor/__pycache__/merkle.cpython-310.pyc": "c7619290c287eef182221afdb212d02dba9519569022a3af20a5ff51d51706f6",
+    "ref/plugins/agt_evidence_anchor/__pycache__/trail_head.cpython-310.pyc": "70b34fdacce372134a82631cc0510df8c99743c9b2ebf33a764cd3e544bb2ff0",
+    "ref/plugins/agt_evidence_anchor/merkle.py": "99fc9ce0336112464f3abe3cc5bdca9bf122afda907c98093fd528a7eb5ece3e",
+    "ref/plugins/agt_evidence_anchor/trail_head.py": "615ae0243a8129b19a0f52d3b78b108b3d5bddbe42975bbefca6356cd3b86403",
+    "trail_verify.py": "8583116d9da3929bbd0f5ca94f46aaba16be68c1b744ff42178b341d98a5efa8",
+    "vectors/cadence-vectors.json": "be15a7ecd386aa70a3610e396f3ebd6b5833b1aa3f4dbe78cf65dd6ab3d841e5",
+    "vectors/vectors.json": "741126d8a6bea4929fdb4921759a7786e8d51074a81e43101b3b80ee0ad36d8f"
+  },
+  "vendored_ref_license": "Apache-2.0 (upstream giskard09/argentum-core)"
+}
