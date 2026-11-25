@@ -1,0 +1,426 @@
+{
+  "as_of": "2026-11-15",
+  "cases": {
+    "D0": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "5_default"
+        }
+      ]
+    },
+    "D1a": {
+      "eligible": false,
+      "not_eligible": "authorization_chain_broken"
+    },
+    "D1b": {
+      "eligible": false,
+      "not_eligible": "authorization_chain_broken"
+    },
+    "D1c": {
+      "eligible": false,
+      "not_eligible": "authorization_chain_broken"
+    },
+    "D1d": {
+      "eligible": false,
+      "not_eligible": "authorization_chain_broken"
+    },
+    "D2": {
+      "eligible": false,
+      "not_eligible": "receipt_status"
+    },
+    "D3a": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "5_default"
+        }
+      ]
+    },
+    "D3b": {
+      "eligible": false,
+      "not_eligible": "outside_window"
+    },
+    "D4": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "D4b": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "1_moot"
+        }
+      ]
+    },
+    "D4c": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "D4d": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "a",
+          "outcome": "uphold",
+          "rule": "5_default"
+        }
+      ]
+    },
+    "D5": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "2_after_exp"
+        }
+      ]
+    },
+    "D5b": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "D6": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 70,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "2_over_mandate"
+        }
+      ]
+    },
+    "D7": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 165,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_unfulfilled"
+        }
+      ]
+    },
+    "D8": {
+      "approval_bound": true,
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": "agent_platform",
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "4_intent"
+        }
+      ]
+    },
+    "D8b": {
+      "approval_bound": false,
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "5_default"
+        }
+      ]
+    },
+    "D8c": {
+      "approval_bound": true,
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "5_default"
+        }
+      ]
+    },
+    "D8d": {
+      "approval_bound": false,
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "5_default"
+        }
+      ]
+    },
+    "E1": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "E2": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "E3": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "1_moot"
+        }
+      ]
+    },
+    "E4": {
+      "eligible": false,
+      "not_eligible": "line_amount_missing"
+    },
+    "E5": {
+      "det_ok": false,
+      "det_problems": [
+        "factors_absent:intent_fidelity,agent_platform_conduct"
+      ],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "E6": {
+      "det_ok": false,
+      "det_problems": [
+        "missing:opened_at"
+      ],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "E7": {
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 200,
+          "finding": null,
+          "line_id": "a",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "T0": {
+      "det_ok": true,
+      "det_problems": [],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "T1": {
+      "det_ok": false,
+      "det_problems": [
+        "prohibited_not_screened"
+      ],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "T2": {
+      "det_ok": false,
+      "det_problems": [
+        "outcome_differs:line_item_123",
+        "fee_paid_by_differs"
+      ],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 0,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "uphold",
+          "rule": "5_default"
+        }
+      ]
+    },
+    "T3": {
+      "det_ok": false,
+      "det_problems": [
+        "factor_not_permitted:party_reputation"
+      ],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "T4": {
+      "det_ok": false,
+      "det_problems": [
+        "signer_incomplete"
+      ],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    },
+    "U3": {
+      "det_ok": true,
+      "det_problems": [],
+      "eligible": true,
+      "not_eligible": null,
+      "per_line": [
+        {
+          "amount": 330,
+          "finding": null,
+          "line_id": "line_item_123",
+          "outcome": "overturn",
+          "rule": "3_canceled"
+        }
+      ]
+    }
+  },
+  "format": "apaf1-sep303-conformance-column-1",
+  "inputs": {
+    "case_source": {
+      "license": "CC0-1.0",
+      "record": "docs/runs/acp-dispute-cold/ddc2871/",
+      "repository": "https://github.com/aos-standard/catalog"
+    },
+    "cases_count": 33,
+    "cases_file": "examples/unreleased/dispute_resolution/conformance_cases.json",
+    "cases_sha256": "284db2ece283415ddbcbdbd523e2a8452838e914c01beca8f44a3d0a597fd3cf"
+  },
+  "judged_by": "APAF-1 decision layer (paymnts, nmatt1) \u2014 an independent cold-read implementation of the ATDRP-0.1 policy, third implementation reported against these cases and the second written independently of the case author",
+  "method": "independent implementation (app/core/pymnts/dispute_atdrp.py): exact-equality authorization chain, RFC 8785 digest recomputation for Section 4.4a, pro-rata adjustment allocation, calendar-day clocks, and the five-rule deterministic decision; regeneration: python3 scripts/build_sep303_column.py. Harness provider: scripts/dispute_provider.py (stdin/stdout contract of PR #316's run-dispute-conformance.js)",
+  "object_of_judgment": "the provider decision on each presented DisputeRecord: eligibility (authorization chain, receipt status, window, line amount), the Section 7.4 per-line deterministic outcome, the Section 4.4a approval binding, and Section 4.5 determination validity when a determination is presented",
+  "result": "33 of 33 cases agree",
+  "written_against": {
+    "fixtures_pinned_at": "b95a19da038f2cd86efffb7e3d694266dcfd3669",
+    "pr": "agentic-commerce-protocol/agentic-commerce-protocol#316",
+    "rfc": "rfcs/rfc.dispute_resolution.md",
+    "rfc_casefile_pointer": "rfcs/rfc.dispute_resolution.md at 94a71e94616e8428291cb004207a48a11e47fd95",
+    "rfc_pinned_sha256": "8b55dea9df690a9bf189b5f760845698236cf588cea7f589539e79057abd3cd2"
+  }
+}
